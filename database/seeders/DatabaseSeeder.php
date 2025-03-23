@@ -23,7 +23,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ConditionSeeder::class,
             ProfileSeeder::class,
-            CompanySeeder::class
+            CompanySeeder::class,
+            TypeDocumentSeeder::class
         ]);
     }
 }
