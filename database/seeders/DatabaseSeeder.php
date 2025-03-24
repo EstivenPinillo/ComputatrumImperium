@@ -22,7 +22,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             ConditionSeeder::class,
-            ProfileSeeder::class
+            ProfileSeeder::class,
+            CompanySeeder::class
         ]);
     }
 }
