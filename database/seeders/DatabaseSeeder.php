@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Computer;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -24,7 +25,8 @@ class DatabaseSeeder extends Seeder
             ConditionSeeder::class,
             ProfileSeeder::class,
             CompanySeeder::class,
-            TypeDocumentSeeder::class
+            TypeDocumentSeeder::class,
+            ComputerSeeder::class
         ]);
     }
 }
