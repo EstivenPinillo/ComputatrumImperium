@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('computers', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('provider_id');
+            $table->unsignedBigInteger('provider_id')->onDelete('cascade');;
             $table->foreign('provider_id')->references('id')->on('companies');
             $table->unsignedBigInteger('condition_id');
             $table->foreign('condition_id')->references('id')->on('conditions');
