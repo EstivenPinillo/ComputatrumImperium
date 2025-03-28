@@ -26,7 +26,8 @@ class DatabaseSeeder extends Seeder
             ProfileSeeder::class,
             CompanySeeder::class,
             TypeDocumentSeeder::class,
-            ComputerSeeder::class
+            ComputerSeeder::class,
+            AccessorySeeder::class
         ]);
     }
 }
