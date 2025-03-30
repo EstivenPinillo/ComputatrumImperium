@@ -14,14 +14,14 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('profile_id');
-            $table->foreign('profiles_id')->references('id')->on('profiles');
+            $table->foreign('profile_id')->references('id')->on('profiles');
             $table->unsignedBigInteger('type_document_id');
-            $table->foreign('type_document_id')->references('id')->on('type_document');
+            $table->foreign('type_document_id')->references('id')->on('type_documents');
             $table->unsignedBigInteger('condition_id');
             $table->foreign('condition_id')->references('id')->on('conditions');
             $table->bigInteger('document_number')->unique();
-            $table->string('name', lenght: 150);
-            $table->string('last_name', lenght: 150);
+            $table->string('name', length: 150);
+            $table->string('last_name', length: 150);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
