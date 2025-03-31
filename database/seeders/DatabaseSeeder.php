@@ -24,10 +24,12 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ConditionSeeder::class,
             ProfileSeeder::class,
-            CompanySeeder::class,
             TypeDocumentSeeder::class,
+            UserSeeder::class,
+            CompanySeeder::class,
             ComputerSeeder::class,
-            AccessorySeeder::class
+            AccessorySeeder::class,
+            MapSeeder::class,
         ]);
     }
 }
