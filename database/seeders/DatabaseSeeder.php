@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
             ComputerSeeder::class,
             AccessorySeeder::class,
             MapSeeder::class,
+            AreaSeeder::class,
         ]);
     }
 }
