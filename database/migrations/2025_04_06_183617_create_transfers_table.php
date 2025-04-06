@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('transfers', function (Blueprint $table) {
             $table->id();
-            //$table->unsignedBigInteger('ueu_id');
-            //$table->foreign('ueu_id')->references('id')->on('conditions');
+            $table->unsignedBigInteger('ucl_id');
+            $table->foreign('ucl_id')->references('ucl_id')->on('user_computer_locations');
             $table->unsignedBigInteger('condition_id');
             $table->foreign('condition_id')->references('id')->on('conditions');
             $table->unsignedBigInteger('user_id');
