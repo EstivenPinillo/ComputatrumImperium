@@ -17,6 +17,7 @@ class TransferFactory extends Factory
     public function definition(): array
     {
         return [
+            'ucl_id' => 1,
             'condition_id' => 1,
             'user_id' => 1,
             'remote_access' => fake()->text(90)
