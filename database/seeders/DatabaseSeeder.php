@@ -31,6 +31,7 @@ class DatabaseSeeder extends Seeder
             AccessorySeeder::class,
             MapSeeder::class,
             AreaSeeder::class,
+            LocationSeeder::class,
         ]);
     }
 }
