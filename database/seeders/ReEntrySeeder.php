@@ -13,6 +13,6 @@ class ReEntrySeeder extends Seeder
      */
     public function run(): void
     {
-        ReFactory::factory()->count(3)->create();
+        ReEntry::factory()->count(3)->create();
     }
 }
