@@ -35,6 +35,7 @@ class DatabaseSeeder extends Seeder
             UserComputerLocationSeeder::class,
             TransferSeeder::class,
             ReEntrySeeder::class,
+            TransferAccessoryReEntrySeeder::class
         ]);
     }
 }
